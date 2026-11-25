@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ex05 · HTTP 200과 404</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css">
+  <script src="taro.app.js" defer></script>
+</head>
+<body class="w3-light-grey">
+    <header class="w3-container w3-teal w3-padding-16">
+      <h1>타로카드</h1>
+    </header>
+    <nav class="w3-bar w3-white w3-card" aria-label="주 메뉴">
+      <a class="w3-bar-item w3-button w3-mobile" href="index.html">홈</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="about.html">내 정보</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="guestbook.local.html">방명록</a>
+      <a class="w3-bar-item w3-button w3-mobile w3-teal" href="taro.index.html" aria-current="page">타로카드</a>
+    </nav>
+  <main class="w3-content w3-padding">
+    <h1>타로 카드와 HTTP 응답</h1>
+    <button class="w3-button w3-teal" id="draw-button" type="button">카드 한 장 뽑기</button>
+    <button class="w3-button w3-border" id="missing-button" type="button">없는 카드 요청</button>
+    <p id="output" role="status">대기 중</p>
+    <section class="w3-container w3-white" id="card" hidden>
+      <h2 id="card-name"></h2>
+      <p>정방향 해석</p>
+      <p id="card-meaning"></p>
+    </section>
+    <p><small><a href="https://github.com/ekelen/tarot-api">Tarot API</a></small></p>
+  </main>
+</body>
+</html>
